@@ -3,9 +3,8 @@ const user = require("../models/user");
 
 const sinup=async(req,res)=>{
     try{
-        const {Name,email,password}= req.body;
+        const {email,password}= req.body;
         const Createuser= await user.create({
-            Name:Name,
             email:email,
             password:password
         });
