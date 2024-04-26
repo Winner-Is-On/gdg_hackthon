@@ -8,7 +8,7 @@ const Navbar = () => {
         <h2 className="logo">Logo</h2>
         <nav className="navigation">
           <NavLink to={"/dashboard"}>Dashboard</NavLink>
-          <NavLink>Mess</NavLink>
+          <NavLink to={"/mess"}>Mess</NavLink>
           <NavLink>Hostel-PG</NavLink>
           <NavLink>Pay</NavLink>
           <NavLink to={'/login'}><button className="btnLogin-popup">Login</button></NavLink>
