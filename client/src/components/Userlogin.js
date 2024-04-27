@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import email from "../assets/email.jpg";
 import close from "../assets/close.jpg";
-import person from "../assets/User.jpg";
 import lock from "../assets/lock.jpg";
 
 const UserLogin = () => {
@@ -21,7 +20,7 @@ const UserLogin = () => {
       const { data } = await axios.post("/login", loginData);
       console.log(data);
       localStorage.setItem("user", JSON.stringify({ ...data }));
-      nevigate("/");
+      nevigate("/home");
     } catch (err) {
       console.log(
         "error in login in submit handler /login backend axios " + err

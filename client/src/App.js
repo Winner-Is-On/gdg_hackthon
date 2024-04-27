@@ -13,6 +13,9 @@ import {
 import UserLogin from './components/Userlogin';
 import MessCard from './components/MessCard';
 import Sinup from './components/Sinup';
+import SimpleSlider from './components/SimpleSlider';
+import HostelCard from './components/HostelCard';
+import Pay from './components/Pay';
 
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
           <Route path="/mess" element={<MessCard></MessCard>}></Route>
           <Route path="/sinup" element={<Sinup></Sinup>}></Route>
+          <Route path="/home" element={<SimpleSlider></SimpleSlider>}></Route>
+          <Route path="/hostel" element={<HostelCard></HostelCard>}></Route>
+          <Route path="/pay" element={<Pay></Pay>}></Route>
           
         </Route>
       </Routes>
